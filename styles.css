@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .tester{
   color: blue;
 }
@@ -8,4 +12,40 @@
 
 body{
   text-align: center;
+}
+
+.header{
+  width: 100%;
+  background-color: white;
+  height: 100px;
+  position: relative;
+}
+
+.menu{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  width: 40%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main-picture{
+  text-align: center;
+  color: white;
+}
+
+.main-image{
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  opacity: 75%;
+  position: absolute;
+}
+
+.top-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
