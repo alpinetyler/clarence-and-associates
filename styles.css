@@ -16,7 +16,7 @@ body{
 
 .header{
   width: 100%;
-  background-color: green;
+  background-color: teal;
   height: 100px;
   position: relative;
 }
@@ -26,7 +26,7 @@ body{
   bottom: 8px;
   right: 16px;
   width: 40%;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: sans-serif;
   word-spacing: 1rem;
   color: white;
@@ -41,16 +41,35 @@ body{
   max-height: 100%;
   max-width: 100%;
   display: block;
-  opacity: 75%;
+  opacity: 80%;
   position: absolute;
 }
 
 .top-centered {
   position: absolute;
-  top: 45%;
+  top: 28%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4rem;
+}
+
+.more-info{
+  font-size: 2rem;
+  width: 200px;
+  height: 50px;
+  border: white 1px solid;
+  color: white;
+  margin: auto;
+
+}
+
+.more-info:hover{
+  background-color: white;
+  color: black;
+}
+
+.button-text{
+  margin: auto;
 }
 
 .logo{
