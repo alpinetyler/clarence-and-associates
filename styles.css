@@ -1,22 +1,26 @@
-.tester {
-  color: blue;
-}
 
 .construction-image {
   height: 100px;
+  margin: 15px;
 }
 
 body {
-  text-align: center;
   margin: 0;
   padding: 0;
 }
 
 .header {
-  width: 100%;
+  width: 100vw;
   background-color: teal;
   height: 100px;
   position: relative;
+  /* padding: 0 0 4.5rem; */
+}
+
+.nav-item {
+  padding: 0 18px;
+
+
 }
 
 .menu {
@@ -30,40 +34,46 @@ body {
   color: white;
 }
 
-.main-picture {
-  text-align: center;
-  color: white;
-  height: 100vh;
-  width: 100%;
+.top-section{
+  /* background-color: teal; */
+
 }
 
+.title-section{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+
 .main-image {
-  height: 100vh;
   width: 100vw;
   display: block;
   opacity: 80%;
-  position: absolute;
 }
 
-.top-centered {
+/* Headings */
+.big-heading {
+  font-family: 'Merriweather', serif;
+  font-size: 3.5rem;
+  color: white;
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3.5rem;
-}
-
-.picture {
-  background: url(images/working.jpg) no-repeat center center;
 }
 
 .more-info {
-  font-size: 1.5rem;
-  width: 200px;
-  height: 50px;
-  border: white 1px solid;
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
   color: white;
-  margin: auto;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: white 1px solid;
+  padding: 0 10px 0 10px;
 }
 
 .more-info:hover {
