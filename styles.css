@@ -1,27 +1,25 @@
-* {
-  box-sizing: border-box;
-}
-
-.tester{
+.tester {
   color: blue;
 }
 
-.construction-image{
+.construction-image {
   height: 100px;
 }
 
-body{
+body {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.header{
+.header {
   width: 100%;
   background-color: teal;
   height: 100px;
   position: relative;
 }
 
-.menu{
+.menu {
   position: absolute;
   bottom: 8px;
   right: 16px;
@@ -32,14 +30,16 @@ body{
   color: white;
 }
 
-.main-picture{
+.main-picture {
   text-align: center;
   color: white;
+  height: 100vh;
+  width: 100%;
 }
 
-.main-image{
-  max-height: 100%;
-  max-width: 100%;
+.main-image {
+  height: 100vh;
+  width: 100vw;
   display: block;
   opacity: 80%;
   position: absolute;
@@ -47,36 +47,38 @@ body{
 
 .top-centered {
   position: absolute;
-  top: 28%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
-.more-info{
-  font-size: 2rem;
+.picture {
+  background: url(images/working.jpg) no-repeat center center;
+}
+
+.more-info {
+  font-size: 1.5rem;
   width: 200px;
   height: 50px;
   border: white 1px solid;
   color: white;
   margin: auto;
-
 }
 
-.more-info:hover{
+.more-info:hover {
   background-color: white;
   color: black;
 }
 
-.button-text{
+.button-text {
   margin: auto;
 }
 
-.logo{
+.logo {
   position: absolute;
   top: 25%;
   left: 16px;
   font-size: 2rem;
   color: white;
-
 }
