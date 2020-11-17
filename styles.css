@@ -7,11 +7,14 @@
 body {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
+
+/* Header */
 .header {
   width: 100vw;
-  background-color: teal;
+  background-color: #2d6187;
   height: 100px;
   position: relative;
   /* padding: 0 0 4.5rem; */
@@ -34,28 +37,44 @@ body {
   color: white;
 }
 
-.top-section{
-  /* background-color: teal; */
-
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
 }
 
+/* Sections */
+.colored-section{
+  background-color: #28abb9;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+
+/* Title Section*/
 .title-section{
   position: relative;
   text-align: center;
   color: white;
 }
 
-
-
 .main-image {
   width: 100vw;
   display: block;
-  opacity: 80%;
+  opacity: 60%;
 }
 
 /* Headings */
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .big-heading {
   font-family: 'Merriweather', serif;
+  width: 100vw;
   font-size: 3.5rem;
   color: white;
   position: absolute;
@@ -81,14 +100,99 @@ body {
   color: black;
 }
 
-.button-text {
-  margin: auto;
+/* Features */
+#features {
+  position: relative;
 }
 
-.logo {
-  position: absolute;
-  top: 25%;
-  left: 16px;
+.feature-box {
+  margin: 75px 0;
+}
+
+.fa-check-circle {
+  font-size: 4em;
+  color: #28abb9;
+}
+
+.feature-icon {
+  font-size: 4em;
+  color: #28abb9;
+}
+
+.feature-icon:hover {
+  color: #2d6187;
+}
+
+/* Testimonials */
+#testimonials {
+  background-color: #28abb9;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  /* line-height: 1; */
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* Pricing Section */
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* Call To Action */
+.cta-heading{
+  font-family: 'Merriweather', serif;
+  width: 60vw;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+}
+
+.container{
+  position: relative;
+  margin: 0px;
+  width: 100vw;
+}
+
+.cta-consultation {
+  font-family: 'Merriweather', serif;
   font-size: 2rem;
   color: white;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: white 1px solid;
+  padding: 0 10px 0 10px;
 }
+
+.cta-consultation:hover {
+  background-color: white;
+  color: black;
+}
+
+
+@media (max-width: 1028px) {
+    .big-heading{
+    font-size: 2rem;
+    }
+
+    .more-info{
+      font-size: 1rem;
+    }
+  }
