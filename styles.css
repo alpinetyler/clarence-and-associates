@@ -20,6 +20,12 @@ body {
   /* padding: 0 0 4.5rem; */
 }
 
+.logo{
+  font-family: times;
+  font-size: 2rem;
+  color: white
+}
+
 .nav-item {
   padding: 0 18px;
 
@@ -165,8 +171,9 @@ body {
 
 .container{
   position: relative;
-  margin: 0px;
-  width: 100vw;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .cta-consultation {
