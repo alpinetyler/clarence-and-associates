@@ -1,8 +1,4 @@
 
-.construction-image {
-  height: 100px;
-  margin: 15px;
-}
 
 body {
   margin: 0;
@@ -10,7 +6,10 @@ body {
   text-align: center;
 }
 
-
+a{
+  text-decoration: none;
+  color: inherit;
+}
 /* Header */
 .header {
   width: 100vw;
@@ -162,37 +161,43 @@ body {
 /* Call To Action */
 .cta-heading{
   font-family: 'Merriweather', serif;
-  width: 60vw;
   font-size: 3.5rem;
   font-weight: 900;
   color: white;
-  text-align: center;
+  margin-bottom: 20px;
+
 }
 
-.container{
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-.cta-consultation {
+.cta-button {
   font-family: 'Merriweather', serif;
   font-size: 2rem;
+  width: fit-content;
+  margin: auto;
   color: white;
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border: white 1px solid;
   padding: 0 10px 0 10px;
 }
 
-.cta-consultation:hover {
+.cta-button:hover {
   background-color: white;
   color: black;
 }
 
+/* Footer */
+
+.social-icon {
+  padding: 0 10px;
+  font-size: 24px;
+}
+
+.social-icon:hover {
+  color: gray;
+}
+
+.copyright-text {
+  color: grey;
+  margin: 20px;
+}
 
 @media (max-width: 1028px) {
     .big-heading{
