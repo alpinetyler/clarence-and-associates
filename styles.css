@@ -88,15 +88,26 @@ a{
   transform: translate(-50%, -50%);
 }
 
+.dark-heading {
+  font-family: 'Merriweather', serif;
+  width: 100vw;
+  font-size: 3.5rem;
+  color: #2d6187;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .more-info {
   font-family: 'Merriweather', serif;
   font-size: 2rem;
-  color: white;
+  color: #2d6187;
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: white 1px solid;
+  border: #2d6187 1px solid;
   padding: 0 10px 0 10px;
 }
 
@@ -201,6 +212,10 @@ a{
 
 @media (max-width: 1028px) {
     .big-heading{
+    font-size: 2rem;
+    }
+
+    .dark-heading{
     font-size: 2rem;
     }
 
