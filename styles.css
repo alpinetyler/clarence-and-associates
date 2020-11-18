@@ -236,4 +236,31 @@ a{
       border: #2d6187 1px solid;
       padding: 0 10px 0 10px;
     }
+
+    .price-text {
+      font-size: 2rem;
+      line-height: 1.0;
+    }
+
+    .pricing-column {
+      padding: 5% 0 0 0;
+    }
+
+    .testimonial-text {
+      font-size: 2rem;
+      /* line-height: 1; */
+    }
+
+    .feature-box {
+      margin: 25px 0;
+    }
+
+    .cta-heading{
+      font-family: 'Merriweather', serif;
+      font-size: 2rem;
+      font-weight: 900;
+      color: white;
+      margin-bottom: 20px;
+
+    }
   }
