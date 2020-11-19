@@ -43,7 +43,7 @@ app.post('/contact', (req, res) =>{
     from: `${email}`,
     to: GMAIL_USER,
     subject: `${email} Requests Free consultation`,
-    text: `${firstName} ${lastName} requests a free bookkeeping consultation, email address is: ${email}`
+    text: `<h1>Name: ${firstName} ${lastName}<br> Email: ${email}<br>Requests a free bookkeeping consultation</h1>`
   }
 
   // attempt to send the Email
