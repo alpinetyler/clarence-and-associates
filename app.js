@@ -43,7 +43,7 @@ app.post('/contact', (req, res) =>{
     from: `${email}`,
     to: GMAIL_USER,
     subject: `${email} Requests Free consultation`,
-    text: `<h1>Name: ${firstName} ${lastName}<br> Email: ${email}<br>Requests a free bookkeeping consultation</h1>`
+    text: `${firstName} ${lastName} requests a free bookkeeping consultation. Email: ${email}`
   }
 
   // attempt to send the Email
@@ -59,6 +59,6 @@ app.post('/contact', (req, res) =>{
 })
 
 
-app.listen(SERVER_PORT, function(){
+app.listen(process.env.PORT || SERVER_PORT, function(){
   console.log(`The Server is now running on port ${SERVER_PORT}`)
 });
