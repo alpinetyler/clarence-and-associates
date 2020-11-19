@@ -99,6 +99,13 @@ a{
   transform: translate(-50%, -50%);
 }
 
+.consultation-heading {
+  font-family: 'Merriweather', serif;
+  width: 100vw;
+  font-size: 3rem;
+  color: #2d6187;
+}
+
 .more-info {
   font-family: 'Merriweather', serif;
   font-size: 2rem;
@@ -196,6 +203,7 @@ a{
 
 /* Footer */
 
+
 .social-icon {
   padding: 0 10px;
   font-size: 24px;
@@ -209,6 +217,8 @@ a{
   color: grey;
   margin: 20px;
 }
+
+
 
 @media (max-width: 1028px) {
     .big-heading{
