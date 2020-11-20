@@ -49,14 +49,19 @@ app.post('/contact', (req, res) =>{
   // attempt to send the Email
   smtpTrans.sendMail(mailOptions, (error, response) => {
     if(error) {
-      // res.render('contact-falure') // show a page indicating failure
-      console.log("mail failed to send" + error)
+      res.sendFile(__dirname + "/failure.html")
+      //console.log("mail failed to send" + error)
     }else{
       // res.render('contact-success') // show a page indicating success
-      console.log("mail was sent!")
+      res.sendFile(__dirname + "/success.html")
     }
   })
 })
+
+// redirect fom failure button to contact page
+app.post("/failure", function(req, res){
+    res.redirect("/contact")
+});
 
 
 app.listen(process.env.PORT || SERVER_PORT, function(){
