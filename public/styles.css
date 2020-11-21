@@ -135,7 +135,7 @@ a{
 
 .more-info:hover {
   background-color: white;
-  color: black;
+  color: #2d6187;
 }
 
 /* Features */
@@ -168,6 +168,7 @@ a{
 
 .testimonial-text {
   font-size: 3rem;
+  font-family: 'Merriweather', serif;
   /* line-height: 1; */
 }
 
@@ -185,10 +186,30 @@ a{
 .price-text {
   font-size: 3rem;
   line-height: 1.5;
+  font-family: 'Merriweather', serif;
+}
+
+.price-plan-name{
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+}
+
+.pricing-feature-text{
+  font-family: 'Merriweather', serif;
+  font-size: 1.1rem;
 }
 
 .pricing-column {
   padding: 3% 2%;
+}
+
+.section-heading{
+  font-family: 'Merriweather', serif;
+}
+
+.signup-btn{
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
 }
 
 /* Call To Action */
@@ -213,7 +234,7 @@ a{
 
 .cta-button:hover {
   background-color: white;
-  color: black;
+  color: #2d6187;
 }
 
 /* Footer */
@@ -222,6 +243,7 @@ a{
 .social-icon {
   padding: 0 10px;
   font-size: 24px;
+  color: #2d6187;
 }
 
 .social-icon:hover {
@@ -229,8 +251,9 @@ a{
 }
 
 .copyright-text {
-  color: grey;
+  color: #2d6187;
   margin: 20px;
+  opacity: 60%;
 }
 
 
