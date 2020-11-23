@@ -312,3 +312,18 @@ a{
 
     }
   }
+
+  @media (max-width: 500px){
+
+    .contact-heading {
+      font-family: 'Merriweather', serif;
+      width: 100vw;
+      font-size: 1.9rem;
+      color: #2d6187;
+      position: relative;
+      margin-top: 15px;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
