@@ -34,6 +34,7 @@ app.post('/contact', (req, res) =>{
 
   let firstName = req.body.firstName;
   let lastName = req.body.lastName;
+  let businessName = req.body.businessName
   let email = req.body.email;
 
 //console.log(`${firstName} ${lastName} ${email}`)
@@ -43,7 +44,7 @@ app.post('/contact', (req, res) =>{
     from: `${email}`,
     to: GMAIL_USER,
     subject: `${email} Requests Free consultation`,
-    text: `${firstName} ${lastName} requests a free bookkeeping consultation. Email: ${email}`
+    text: `${firstName} ${lastName} from ${businessName} requests a free bookkeeping consultation. Email: ${email}`
   }
 
   // attempt to send the Email
