@@ -34,17 +34,21 @@ app.post('/contact', (req, res) =>{
 
   let firstName = req.body.firstName;
   let lastName = req.body.lastName;
-  let businessName = req.body.businessName
   let email = req.body.email;
 
 //console.log(`${firstName} ${lastName} ${email}`)
+var message = "<p style='font-weight:bold;'> Hi. My name is John </p>";
 
   // specify what the email will look like
   const mailOptions = {
     from: `${email}`,
     to: GMAIL_USER,
     subject: `${email} Requests Free consultation`,
-    text: `${firstName} ${lastName} from ${businessName} requests a free bookkeeping consultation. Email: ${email}`
+    html: `<img style="height:100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeEXfr5jnA13j7LSLuNy7OzTUZaBg8LRrQgw&usqp=CAU">
+          <p><strong style="color:blue">Name:</strong> ${firstName} ${lastName}
+           <br><strong style="color:blue">Email:</strong> ${email}
+           <br><strong style="color:blue">Request:</strong> Free bookkeeping consultation.`
+
   }
 
   // attempt to send the Email
