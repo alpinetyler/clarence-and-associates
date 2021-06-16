@@ -3,13 +3,13 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 require('dotenv/config');
 
-const PORT = 3020;
+//const PORT = 3020;
 
 const app = express();
-const {SERVER_PORT, GMAIL_USER, GMAIL_PASS} = process.env
+const { SERVER_PORT, GMAIL_USER, GMAIL_PASS } = process.env
 
 app.use(express.static("public"))
-app.use(bodyParser.urlencoded({extended:true}));
+app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
@@ -19,7 +19,7 @@ app.get("/contact", (req, res) => {
   res.sendFile(__dirname + "/contact.html");
 })
 
-app.post('/contact', (req, res) =>{
+app.post('/contact', (req, res) => {
 
   // instantiate the SMTP server
   const smtpTrans = nodemailer.createTransport({
@@ -36,8 +36,8 @@ app.post('/contact', (req, res) =>{
   let lastName = req.body.lastName;
   let email = req.body.email;
 
-//console.log(`${firstName} ${lastName} ${email}`)
-var message = "<p style='font-weight:bold;'> Hi. My name is John </p>";
+  //console.log(`${firstName} ${lastName} ${email}`)
+  var message = "<p style='font-weight:bold;'> Hi. My name is John </p>";
 
   // specify what the email will look like
   const mailOptions = {
@@ -53,10 +53,10 @@ var message = "<p style='font-weight:bold;'> Hi. My name is John </p>";
 
   // attempt to send the Email
   smtpTrans.sendMail(mailOptions, (error, response) => {
-    if(error) {
+    if (error) {
       res.sendFile(__dirname + "/failure.html")
       //console.log("mail failed to send" + error)
-    }else{
+    } else {
       // res.render('contact-success') // show a page indicating success
       res.sendFile(__dirname + "/success.html")
     }
@@ -64,11 +64,11 @@ var message = "<p style='font-weight:bold;'> Hi. My name is John </p>";
 })
 
 // redirect fom failure button to contact page
-app.post("/failure", function(req, res){
-    res.redirect("/contact")
+app.post("/failure", function (req, res) {
+  res.redirect("/contact")
 });
 
 
-app.listen(process.env.PORT || SERVER_PORT, function(){
+app.listen(process.env.PORT || SERVER_PORT, function () {
   console.log(`The Server is now running on port ${SERVER_PORT}`)
 });
